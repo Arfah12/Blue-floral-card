@@ -60,7 +60,7 @@
 .the-day-section-title {
   position: absolute;
 
-  top: 130px;
+  top: 110px;
   left: 50%;
 
   transform: translateX(-50%);
@@ -112,13 +112,13 @@
 ========================================= */
 
 .the-day-ornament {
-  margin-bottom: 13px;
+  margin-bottom: 1px;
 
   font-family: var(--font-heading);
 
   font-size: 18px;
 
-  line-height: 1;
+  line-height: 2;
 
   color: #ce8d64 !important;
 }
