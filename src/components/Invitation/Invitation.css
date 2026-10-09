@@ -1,0 +1,349 @@
+/* =========================================
+   INVITATION
+========================================= */
+
+.invitation-section {
+  position: relative;
+
+  width: 100%;
+  height: 100svh;
+  min-height: 100svh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: var(--color-background);
+
+  color: #4a1f25;
+
+  text-align: center;
+
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================================
+   INVITATION WALLPAPER
+========================================= */
+
+.invitation-wallpaper {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  pointer-events: none;
+
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+/* =========================================
+   INVITATION CONTENT
+========================================= */
+
+.invitation-inner {
+  position: relative;
+
+  z-index: 5;
+
+  width: 420px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   ORNAMENT
+========================================= */
+
+.invitation-ornament {
+  margin-bottom: 18px;
+
+  color: #8a5a3c !important;
+
+  font-size: 20px;
+}
+
+
+/* =========================================
+   SMALL TITLE
+========================================= */
+
+.invitation-small-title {
+  margin: 0;
+
+  font-family: var(--font-heading);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  letter-spacing: 4px;
+
+  color: #4a1f25 !important;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   NAMES
+========================================= */
+
+.invitation-heading {
+  margin: 24px 0 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  line-height: 0.9;
+}
+
+.invitation-name {
+  font-family: var(--font-script);
+
+  font-size: 76px;
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  white-space: nowrap;
+
+  color: #4a1f25 !important;
+}
+
+
+/* =========================================
+   AND
+========================================= */
+
+.invitation-and {
+  margin: 10px 0;
+
+  font-family: var(--font-heading);
+
+  font-size: 22px;
+
+  font-weight: 400;
+
+  font-style: italic;
+
+  color: #8a5a3c !important;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.invitation-divider {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 25px 0 18px;
+}
+
+.invitation-divider span {
+  width: 65px;
+
+  height: 1px;
+
+  background: #8a5a3c !important;
+
+  opacity: 0.6;
+}
+
+.invitation-divider i {
+  margin: 0 14px;
+
+  font-size: 16px;
+
+  font-style: normal;
+
+  color: #8a5a3c !important;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.invitation-message {
+  max-width: 360px;
+
+  margin: 0;
+
+  font-family: var(--font-body);
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  color: #5a3434 !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .invitation-inner {
+    width: 300px;
+
+    max-width: 300px;
+  }
+
+
+  /* -----------------------------------------
+     ORNAMENT
+  ----------------------------------------- */
+
+  .invitation-ornament {
+    font-size: 16px;
+
+    margin-bottom: 12px;
+
+    color: #8a5a3c !important;
+  }
+
+
+  /* -----------------------------------------
+     SMALL TITLE
+  ----------------------------------------- */
+
+  .invitation-small-title {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #4a1f25 !important;
+  }
+
+
+  /* -----------------------------------------
+     NAMES
+  ----------------------------------------- */
+
+  .invitation-heading {
+    margin-top: 18px;
+  }
+
+  .invitation-name {
+    font-size: 58px;
+
+    color: #4a1f25 !important;
+  }
+
+
+  /* -----------------------------------------
+     AND
+  ----------------------------------------- */
+
+  .invitation-and {
+    font-size: 18px;
+
+    margin: 8px 0;
+
+    color: #8a5a3c !important;
+  }
+
+
+  /* -----------------------------------------
+     DIVIDER
+  ----------------------------------------- */
+
+  .invitation-divider {
+    margin: 18px 0 14px;
+  }
+
+  .invitation-divider span {
+    width: 45px;
+
+    background: #8a5a3c !important;
+  }
+
+  .invitation-divider i {
+    margin: 0 10px;
+
+    font-size: 14px;
+
+    color: #8a5a3c !important;
+  }
+
+
+  /* -----------------------------------------
+     MESSAGE
+  ----------------------------------------- */
+
+  .invitation-message {
+    max-width: 270px;
+
+    margin-top: 0;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    color: #5a3434 !important;
+  }
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 601px) {
+
+  .invitation-inner {
+    width: 420px;
+  }
+
+
+  .invitation-small-title {
+    color: #4a1f25 !important;
+  }
+
+  .invitation-name {
+    color: #4a1f25 !important;
+  }
+
+  .invitation-message {
+    color: #5a3434 !important;
+  }
+}

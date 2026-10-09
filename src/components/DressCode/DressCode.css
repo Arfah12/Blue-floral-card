@@ -1,0 +1,301 @@
+ /* =========================
+   DRESS CODE SECTION
+========================= */
+
+.dress-code-section {
+  position: relative;
+
+  width: 100%;
+  height: 100svh;
+  min-height: 100svh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+
+  background: #fff9f8;
+
+  text-align: center;
+}
+
+
+/* =========================
+   WALLPAPER
+========================= */
+
+.dress-code-wallpaper {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+ background: #4f0e03;
+  z-index: 0;
+
+  display: block;
+
+  /*
+    FULL WALLPAPER
+    NO CROP
+  */
+  object-fit: contain;
+  object-position: center center;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  pointer-events: none;
+  user-select: none;
+
+  -webkit-user-drag: none;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.dress-code-section-title {
+  position: absolute;
+
+  top: 105px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 10;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--font-script);
+
+  font-size: 43px;
+  font-weight: 400;
+
+  line-height: 1;
+
+  white-space: nowrap;
+
+  color: #ffffff !important;
+
+  text-align: center;
+
+  opacity: 1;
+}
+
+
+/* =========================
+   INNER
+========================= */
+
+.dress-code-inner {
+  position: relative;
+
+  z-index: 2;
+
+  width: 378px;
+  max-width: calc(100% - 40px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================
+   ORNAMENT
+========================= */
+
+.dress-code-ornament {
+  margin-bottom: 14px;
+
+  font-family: var(--font-heading);
+
+  font-size: 18px;
+
+  line-height: 1;
+
+  color: #8a5a3c !important;
+}
+
+
+/* =========================
+   COLOUR
+========================= */
+
+.dress-code-colour {
+  margin: 0;
+
+  font-family: var(--font-script);
+
+  font-size: 43px;
+  font-weight: 400;
+
+  line-height: 1;
+
+  white-space: nowrap;
+
+  color: #ffffff !important;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.dress-code-description {
+  width: 297px;
+
+  margin: 14px auto 0;
+
+  font-family: var(--font-body);
+
+  font-size: 13.5px;
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.4px;
+
+  color: #ffffff !important;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.dress-code-gallery {
+  width: 100%;
+
+  margin-top: 32px;
+
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 23px;
+}
+
+
+/* =========================
+   DRESS CARD
+========================= */
+
+.dress-card {
+  width: 119px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* =========================
+   IMAGE WRAPPER
+========================= */
+
+.dress-image-wrapper {
+  width: 115px;
+  height: 121px;
+
+  padding: 5px;
+
+  
+  background: rgba(255, 250, 240, 0.65);
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.dress-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition:
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.dress-label {
+  margin: 16px 0 0;
+  padding-top: 16px;
+  font-family: var(--font-heading);
+
+  font-size: 12px;
+  font-weight: 500;
+
+  letter-spacing: 2.3px;
+
+  line-height: 1.2;
+
+  text-transform: uppercase;
+
+  color: #f4b086 !important;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.dress-code-divider {
+  width: 100%;
+
+  margin-top: 29px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.dress-code-divider span {
+  width: 59px;
+  height: 1px;
+
+  background: #8a5a3c;
+
+  opacity: 0.6;
+}
+
+
+.dress-code-divider i {
+  margin: 0 13px;
+
+  font-family: var(--font-heading);
+
+  font-size: 14px;
+
+  font-style: normal;
+
+  line-height: 1;
+
+  color: #8a5a3c;
+}

@@ -1,0 +1,157 @@
+.bride-view {
+  position: relative;
+  z-index: 2;
+
+  width: min(700px, 100%);
+  margin: 0 auto;
+  padding: 35px 20px 45px;
+
+  color: #f6e4c4;
+  font-family: var(--font-body);
+  text-align: center;
+}
+
+.bride-view-trigger {
+  width: 72px;
+  height: 72px;
+  padding: 0;
+
+  overflow: hidden;
+
+  border: 0;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.bride-view-trigger img {
+  position: relative;
+  top: 100%;
+  left: 50%;
+
+  width: 400%;
+  height: 700%;
+  max-width: none;
+
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.bride-view-pin {
+  max-width: 330px;
+  margin: 18px auto 0;
+}
+
+.bride-view-pin label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.bride-view-pin-row {
+  display: flex;
+  gap: 7px;
+}
+
+.bride-view-pin input,
+.bride-view-pin button,
+.bride-view-dashboard button {
+  padding: 9px 12px;
+  border: 1px solid #dcb37e;
+  font: inherit;
+}
+
+.bride-view-pin input {
+  min-width: 0;
+  flex: 1;
+  background: #fffaf0;
+  color: #4a1f25;
+}
+
+.bride-view-pin button,
+.bride-view-dashboard button {
+  background: #641f2b;
+  color: #fffaf0;
+  cursor: pointer;
+}
+
+.bride-view-pin p,
+.bride-view-dashboard p {
+  margin: 9px 0 0;
+  color: #ffd6d6;
+  font-size: 12px;
+}
+
+.bride-view-dashboard {
+  max-width: 580px;
+  margin: 25px auto 0;
+  padding: 20px;
+  border: 1px solid rgba(219, 179, 126, 0.65);
+  background: rgba(44, 10, 4, 0.58);
+}
+
+.bride-view-dashboard-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.bride-view-dashboard h2 {
+  margin: 0;
+  font-family: var(--font-script);
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.bride-view-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.bride-view-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 13px 8px;
+  border: 1px solid rgba(219, 179, 126, 0.4);
+  background: rgba(255, 250, 240, 0.1);
+}
+
+.bride-view-stats strong {
+  color: #f6d49e;
+  font-family: var(--font-heading);
+  font-size: 24px;
+}
+
+.bride-view-stats span {
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.bride-view-stats small {
+  opacity: 0.7;
+}
+
+@media (max-width: 520px) {
+  .bride-view-dashboard-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .bride-view-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bride-view-trigger,
+  .bride-view-dashboard button {
+    transition: none;
+  }
+}

@@ -1,0 +1,90 @@
+/* ==========================================
+   BASE
+========================================== */
+
+.animation-wrapper {
+  opacity: 0;
+
+  will-change:
+    opacity,
+    transform,
+    filter;
+
+  transition:
+    opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.4s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* ==========================================
+   FADE UP
+========================================== */
+
+.animation-wrapper.fade-up {
+  transform: translateY(30px);
+}
+
+.animation-wrapper.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ==========================================
+   FADE
+========================================== */
+
+.animation-wrapper.fade {
+  transform: none;
+}
+
+.animation-wrapper.fade.is-visible {
+  opacity: 1;
+}
+
+
+/* ==========================================
+   FADE SCALE
+========================================== */
+
+.animation-wrapper.fade-scale {
+  transform: scale(0.96);
+}
+
+.animation-wrapper.fade-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* ==========================================
+   FADE BLUR
+========================================== */
+
+.animation-wrapper.fade-blur {
+  filter: blur(6px);
+  transform: translateY(10px);
+}
+
+.animation-wrapper.fade-blur.is-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+
+/* ==========================================
+   REDUCE MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .animation-wrapper {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+
+}

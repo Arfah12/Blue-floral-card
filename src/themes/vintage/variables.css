@@ -1,0 +1,89 @@
+:root {
+  /* =========================================
+     VINTAGE MAROON THEME
+  ========================================= */
+
+  --color-background: #4a151f;
+
+  --color-background-soft: #641f2b;
+
+  /* Main text */
+  --color-primary: #fffaf0;
+
+  /* Main heading */
+  --color-primary-dark: #ffffff;
+
+  /* Body text */
+  --color-text: #fff8ed;
+
+  /* Secondary text */
+  --color-text-soft: #ead9c8;
+
+  /* Gold accent */
+  --color-accent: #d8b47a;
+
+  /* Light gold */
+  --color-accent-light: #ecd6a8;
+
+  /* Bright cream */
+  --color-white: #fffdf7;
+
+
+  /* =========================================
+     FONTS
+  ========================================= */
+
+  --font-heading: "Cormorant Garamond", serif;
+
+  --font-script: "Great Vibes", cursive;
+
+  --font-body: "Cormorant Garamond", serif;
+
+
+  /* =========================================
+     SPACING
+  ========================================= */
+
+  --space-xs: 8px;
+
+  --space-sm: 16px;
+
+  --space-md: 24px;
+
+  --space-lg: 40px;
+
+  --space-xl: 64px;
+
+  --space-xxl: 100px;
+
+
+  /* =========================================
+     CARD
+  ========================================= */
+
+  --card-max-width: 470px;
+
+  --section-padding: 100px 24px;
+
+
+  /* =========================================
+     BORDER
+  ========================================= */
+
+  --border-color:
+    rgba(236, 214, 168, 0.55);
+
+  --border-thin:
+    1px solid var(--border-color);
+
+
+  /* =========================================
+     ANIMATION
+  ========================================= */
+
+  --transition-slow:
+    1.5s cubic-bezier(0.22, 1, 0.36, 1);
+
+  --transition-normal:
+    0.8s ease;
+}

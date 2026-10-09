@@ -1,0 +1,332 @@
+/* =========================
+   WISHES SECTION
+========================= */
+
+.wishes-section {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: 100svh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0 20px;
+
+  background: #fff9f8;
+
+  text-align: center;
+}
+
+
+/* =========================
+   WALLPAPER
+========================= */
+
+.wishes-wallpaper {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 0;
+  display: block;
+
+  /* Wallpaper tidak crop */
+  object-fit: contain;
+  object-position: center center;
+
+  max-width: 100%;
+  max-height: 100%;
+background: #4f0e03;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.wishes-section-title {
+  position: absolute;
+
+  top: 100px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 10;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--font-script);
+
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 1;
+
+  white-space: nowrap;
+
+  color: #ffffff !important;
+
+  text-align: center;
+}
+
+
+/* =========================
+   INNER
+========================= */
+
+.wishes-inner {
+  position: relative;
+
+  z-index: 2;
+
+  width: 340px;
+  max-width: calc(100% - 40px);
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================
+   ORNAMENT
+========================= */
+
+.wishes-ornament {
+  margin-bottom: 11px;
+
+  font-family: var(--font-heading);
+
+  font-size: 18px;
+  line-height: 1;
+
+  color: #8a5a3c !important;
+}
+
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.wishes-subtitle {
+  max-width: 270px;
+
+  margin: 0 0 25px;
+
+  font-family: var(--font-body);
+
+  font-size: 13.5px;
+  line-height: 1.5;
+
+  color: #ffffff !important;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.wishes-form {
+  width: 100%;
+  max-width: 310px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+
+/* =========================
+   FIELD
+========================= */
+
+.wishes-field {
+  width: 100%;
+}
+
+
+.wishes-field input,
+.wishes-field textarea {
+  width: 100%;
+
+  display: block;
+
+  box-sizing: border-box;
+
+  padding: 12px 18px;
+
+  border: 1px solid rgba(138, 90, 60, 0.4);
+
+  border-radius: 0;
+
+  outline: none;
+
+  background: rgba(255, 253, 247, 0.88);
+
+  color: #4a1f25;
+
+  font-family: var(--font-body);
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.wishes-field textarea {
+  resize: vertical;
+
+  min-height: 100px;
+}
+
+
+.wishes-field input::placeholder,
+.wishes-field textarea::placeholder {
+  color: #4a1c00;
+  opacity: 0.7;
+}
+
+
+.wishes-field input:focus,
+.wishes-field textarea:focus {
+  border-color: #8a5a3c;
+
+  background: rgba(
+    255,
+    253,
+    247,
+    0.9
+  );
+}
+
+
+.wishes-field input:disabled,
+.wishes-field textarea:disabled {
+  color: #80666a;
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.wishes-button {
+  align-self: center;
+
+  min-width: 135px;
+
+  margin-top: 4px;
+
+  padding: 10px 23px;
+
+  border: 1px solid #641f2b;
+
+  background: #641f2b;
+
+  color: #fffaf0;
+
+  font-family: var(--font-heading);
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+
+.wishes-button:hover {
+  background: #4a151f;
+
+  color: #fffaf0;
+}
+
+
+.wishes-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+
+.wishes-status {
+  margin: 2px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+
+.wishes-status.success {
+  color: #f8e8c9;
+}
+
+
+.wishes-status.error {
+  color: #ffd6d6;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.wishes-divider {
+  width: 100%;
+
+  margin-top: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.wishes-divider span {
+  width: 50px;
+
+  height: 1px;
+
+  background: #8a5a3c;
+
+  opacity: 0.6;
+}
+
+
+.wishes-divider i {
+  margin: 0 12px;
+
+  font-family: var(--font-heading);
+
+  font-size: 13px;
+
+  font-style: normal;
+
+  color: #8a5a3c;
+}

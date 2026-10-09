@@ -1,0 +1,301 @@
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero-section {
+  position: relative;
+
+  width: 100%;
+  height: 100svh;
+  min-height: 100svh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #fff9f8;
+
+  color: #4f0e03;
+
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+
+/* =========================================
+   HERO WALLPAPER
+========================================= */
+
+.hero-wallpaper {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+
+  /*
+    Jangan crop.
+    Jangan stretch.
+    Wallpaper penuh dikekalkan.
+  */
+
+  object-fit: contain;
+  object-position: center center;
+
+  background: #4f0e03;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  pointer-events: none;
+  user-select: none;
+
+  -webkit-user-drag: none;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-inner {
+  position: relative;
+
+  z-index: 5;
+
+  width: 420px;
+
+  flex-shrink: 0;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* =========================================
+   ORNAMENT
+========================================= */
+
+.hero-ornament {
+  margin-bottom: 0;
+
+  color: #8a5a3c;
+
+  font-family: var(--font-heading);
+
+  font-size: 18px;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   SMALL TITLE
+========================================= */
+
+.hero-small-title {
+  margin: 0;
+
+  font-family: var(--font-heading);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  letter-spacing: 4px;
+
+  line-height: 1.2;
+
+  color: #4f0e03;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   NAMES
+========================================= */
+
+.hero-names {
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  line-height: 0.95;
+}
+
+
+.hero-bride,
+.hero-groom {
+  font-family: var(--font-script);
+
+  font-size: 50px;
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  white-space: nowrap;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   AND
+========================================= */
+
+.hero-and {
+  margin: 12px 0;
+
+  font-family: var(--font-heading);
+
+  font-size: 22px;
+
+  font-weight: 400;
+
+  font-style: italic;
+
+  line-height: 1;
+
+  color: #8a5a3c;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.hero-divider {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 25px 0 18px;
+}
+
+
+.hero-divider span {
+  width: 65px;
+
+  height: 1px;
+
+  background: #8a5a3c;
+
+  opacity: 0.6;
+}
+
+
+.hero-divider i {
+  margin: 0 14px;
+
+  font-family: var(--font-heading);
+
+  font-size: 14px;
+
+  font-style: normal;
+
+  line-height: 1;
+
+  color: #8a5a3c;
+}
+
+
+/* =========================================
+   DATE
+========================================= */
+
+.hero-date {
+  margin: 0;
+
+  font-family: var(--font-heading);
+
+  font-size: 22px;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+
+  line-height: 1.2;
+
+  color: #4f0e03;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   TIME
+========================================= */
+
+.hero-time {
+  margin-top: 7px;
+
+  font-family: var(--font-body);
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  letter-spacing: 1px;
+
+  line-height: 1.3;
+
+  color: #8a5a3c;
+
+  white-space: nowrap;
+}
+
+
+.hero-time span {
+  margin: 0 4px;
+
+  color: #8a5a3c;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.hero-message {
+  max-width: 324px;
+
+  margin-top: 22px;
+
+  font-family: var(--font-body);
+
+  font-size: 14px;
+
+  line-height: 1.55;
+
+  color: #4f0e03;
+
+  text-align: center;
+}
+
