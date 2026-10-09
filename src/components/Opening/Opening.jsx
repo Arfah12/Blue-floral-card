@@ -2,7 +2,7 @@
 import { useState } from "react";
 import FadeIn from "../Animation/FadeIn";
 
-import openingWallpaper from "../../assets/images/vintage/opening2.png";
+import openingWallpaper from "../../assets/images/vintage/hero4.png";
 import openButtonImage from "../../assets/images/vintage/openbutton.png";
 
 import "./Opening.css";

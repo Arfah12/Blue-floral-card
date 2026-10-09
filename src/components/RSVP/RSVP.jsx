@@ -36,7 +36,7 @@ function RSVP() {
 
     if (!guestName || !attendance || !guestCount) {
       setStatusType("error");
-      setStatus("Please complete all fields.");
+      setStatus("Sila lengkapkan semua ruangan.");
       return;
     }
 
@@ -46,13 +46,13 @@ function RSVP() {
       numberOfGuests > 20
     ) {
       setStatusType("error");
-      setStatus("Number of guests must be between 1 and 20.");
+      setStatus("Bilangan tetamu mestilah antara 1 hingga 20 orang.");
       return;
     }
 
     if (guestName.length > 100) {
       setStatusType("error");
-      setStatus("Your name must not exceed 100 characters.");
+      setStatus("Nama anda tidak boleh melebihi 100 aksara.");
       return;
     }
 
@@ -73,13 +73,13 @@ function RSVP() {
       setAttendance("");
 
       setStatusType("success");
-      setStatus("Thank you! Your RSVP has been recorded.");
+      setStatus("Terima kasih! Pengesahan kehadiran anda telah direkodkan.");
     } catch (error) {
       console.error("Error saving RSVP:", error);
 
       setStatusType("error");
       setStatus(
-        "Unable to submit your RSVP. Please try again."
+        "Pengesahan kehadiran tidak dapat dihantar. Sila cuba lagi."
       );
     } finally {
       setLoading(false);
@@ -111,7 +111,7 @@ function RSVP() {
           className="rsvp-subtitle-wrapper"
         >
           <p className="rsvp-subtitle">
-            Kindly confirm your attendance
+            Sila sahkan kehadiran anda
           </p>
         </FadeIn>
 
@@ -124,7 +124,7 @@ function RSVP() {
           >
             <input
               type="text"
-              placeholder="Your Name"
+              placeholder="Nama Anda"
               value={name}
               onChange={(event) =>
                 setName(event.target.value)
@@ -139,7 +139,7 @@ function RSVP() {
               min="1"
               max="20"
               step="1"
-              placeholder="Number of Guests"
+              placeholder="Bilangan Tetamu"
               value={guestCount}
               onChange={(event) =>
                 setGuestCount(event.target.value)
@@ -157,15 +157,15 @@ function RSVP() {
               disabled={loading}
             >
               <option value="" disabled>
-                Attendance
+                Kehadiran
               </option>
 
               <option value="yes">
-                Joyfully Attending
+                Ya, saya akan hadir
               </option>
 
               <option value="no">
-                Unable to Attend
+                Tidak dapat hadir
               </option>
             </select>
 
@@ -174,7 +174,7 @@ function RSVP() {
               className="rsvp-button"
               disabled={loading}
             >
-              {loading ? "Submitting..." : "Confirm RSVP"}
+              {loading ? "Menghantar..." : "Sahkan Kehadiran"}
             </button>
 
             {status && (

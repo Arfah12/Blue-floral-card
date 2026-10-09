@@ -36,8 +36,8 @@ function BrideView() {
         console.error("Error loading RSVP dashboard:", error);
         setLoadError(
           error.code === "permission-denied"
-            ? "Firestore menolak bacaan RSVP. Kemaskini Firestore Rules untuk membenarkan bacaan."
-            : "Unable to load RSVP data."
+            ? "Firestore menolak bacaan RSVP. Sila kemas kini Firestore Rules untuk membenarkan bacaan."
+            : "Data kehadiran tidak dapat dimuatkan."
         );
       }
     );
@@ -63,7 +63,7 @@ function BrideView() {
     event.preventDefault();
 
     if (pin !== BRIDE_PIN) {
-      setPinError("PIN tidak betul.");
+      setPinError("PIN tidak betul. Sila cuba lagi.");
       return;
     }
 
@@ -74,11 +74,11 @@ function BrideView() {
 
   const exportRsvps = () => {
     const rows = [
-      ["Name", "Guest Count", "Attendance"],
+      ["Nama", "Bilangan Tetamu", "Kehadiran"],
       ...rsvps.map((rsvp) => [
         rsvp.name ?? "",
         rsvp.guestCount ?? "",
-        rsvp.attendance === "yes" ? "Attending" : "Not attending",
+        rsvp.attendance === "yes" ? "Hadir" : "Tidak hadir",
       ]),
     ];
     const csv = rows
@@ -101,7 +101,7 @@ function BrideView() {
   };
 
   return (
-    <section className="bride-view" aria-label="Bride view">
+    <section className="bride-view" aria-label="Paparan pengantin">
       <button
         type="button"
         className="bride-view-trigger"
@@ -110,24 +110,24 @@ function BrideView() {
           setIsOpen(false);
           setShowPin(true);
         }}
-        aria-label="Buka Bride View"
+        aria-label="Buka paparan pengantin"
       >
         <img src={openButtonImage} alt="" />
       </button>
 
       {!isOpen && showPin && (
         <form className="bride-view-pin" onSubmit={handleUnlock}>
-          <label htmlFor="bride-pin">Masukkan PIN untuk buka dashboard</label>
+          <label htmlFor="bride-pin">Masukkan PIN untuk membuka paparan pengantin</label>
           <div className="bride-view-pin-row">
             <input
               id="bride-pin"
               type="password"
               value={pin}
               onChange={(event) => setPin(event.target.value)}
-              placeholder="PIN"
+              placeholder="Masukkan PIN"
               autoComplete="off"
             />
-            <button type="submit">Buka</button>
+            <button type="submit">Buka Paparan</button>
           </div>
           {pinError && <p role="alert">{pinError}</p>}
         </form>
@@ -136,9 +136,9 @@ function BrideView() {
       {isOpen && (
         <div className="bride-view-dashboard">
           <div className="bride-view-dashboard-heading">
-            <h2>Guest Attendance</h2>
+            <h2>Ringkasan Kehadiran</h2>
             <button type="button" onClick={exportRsvps} disabled={!rsvps.length}>
-              Export CSV
+              Eksport CSV
             </button>
           </div>
 
@@ -148,18 +148,18 @@ function BrideView() {
             <div className="bride-view-stats">
               <div>
                 <strong>{attendingGuests}</strong>
-                <span>Coming</span>
-                <small>{attending.length} RSVP</small>
+                <span>Hadir</span>
+                <small>{attending.length} pengesahan</small>
               </div>
               <div>
                 <strong>{notAttendingGuests}</strong>
-                <span>Not coming</span>
-                <small>{notAttending.length} RSVP</small>
+                <span>Tidak hadir</span>
+                <small>{notAttending.length} pengesahan</small>
               </div>
               <div>
                 <strong>{attendingGuests + notAttendingGuests}</strong>
-                <span>Total guests</span>
-                <small>{rsvps.length} RSVP</small>
+                <span>Jumlah tetamu</span>
+                <small>{rsvps.length} pengesahan</small>
               </div>
             </div>
           )}

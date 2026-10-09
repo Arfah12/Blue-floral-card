@@ -75,7 +75,7 @@ function Countdown() {
       ========================= */}
 
       <div className="countdown-section-title">
-        Until The Day
+        Menghitung Hari
       </div>
 
 
@@ -87,12 +87,7 @@ function Countdown() {
 
         {/* ORNAMENT */}
 
-        <FadeIn animation="fade-scale">
-          <div className="countdown-ornament">
-            ✦
-          </div>
-        </FadeIn>
-
+      
 
         {/* MAIN DAYS */}
 
@@ -104,7 +99,7 @@ function Countdown() {
             </span>
 
             <span className="countdown-days-label">
-              Days
+              Hari
             </span>
 
           </div>
@@ -133,7 +128,7 @@ function Countdown() {
               </span>
 
               <span className="countdown-label">
-                Hours
+                Jam
               </span>
             </div>
 
@@ -144,7 +139,7 @@ function Countdown() {
               </span>
 
               <span className="countdown-label">
-                Minutes
+                Minit
               </span>
             </div>
 
@@ -155,7 +150,7 @@ function Countdown() {
               </span>
 
               <span className="countdown-label">
-                Seconds
+                Saat
               </span>
             </div>
 

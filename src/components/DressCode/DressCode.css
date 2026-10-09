@@ -1,105 +1,91 @@
- /* =========================
-   DRESS CODE SECTION
-========================= */
+
+/* =========================================
+   DRESS CODE — LUXURY VINTAGE EDITION
+========================================= */
 
 .dress-code-section {
   position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
 
   width: 100%;
-  height: 100svh;
   min-height: 100svh;
+  height: auto;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   overflow: hidden;
-
   margin: 0;
-  padding: 0;
+  padding: 150px 20px 65px;
 
   background: #fff9f8;
-
   text-align: center;
 }
 
-
-/* =========================
+/* =========================================
    WALLPAPER
-========================= */
+   Keep original wallpaper ratio and position
+========================================= */
 
 .dress-code-wallpaper {
   position: absolute;
-
   inset: 0;
-
-  width: 100%;
-  height: 100%;
- background: #4f0e03;
-  z-index: 0;
+  z-index: -1;
 
   display: block;
+  width: 100%;
+  height: 100%;
 
-  /*
-    FULL WALLPAPER
-    NO CROP
-  */
+  background: #4f0e03;
+
   object-fit: contain;
   object-position: center center;
 
-  max-width: 100%;
-  max-height: 100%;
-
   pointer-events: none;
   user-select: none;
-
   -webkit-user-drag: none;
 }
 
-
-/* =========================
+/* =========================================
    SECTION TITLE
-========================= */
+========================================= */
 
 .dress-code-section-title {
   position: absolute;
-
-  top: 105px;
+  top: 130px;
   left: 50%;
-
-  transform: translateX(-50%);
-
-  z-index: 10;
+  z-index: 3;
 
   margin: 0;
   padding: 0;
 
+  color: #fff9f0 !important;
+
   font-family: var(--font-script);
-
-  font-size: 43px;
+  font-size: 40px;
   font-weight: 400;
-
-  line-height: 1;
+  line-height: 1.15;
 
   white-space: nowrap;
-
-  color: #ffffff !important;
-
   text-align: center;
 
-  opacity: 1;
+  text-shadow:
+    0 2px 10px rgba(30, 0, 0, 0.16);
+
+  transform: translateX(-50%);
 }
 
-
-/* =========================
-   INNER
-========================= */
+/* =========================================
+   CONTENT WRAPPER
+========================================= */
 
 .dress-code-inner {
   position: relative;
-
   z-index: 2;
 
+  box-sizing: border-box;
   width: 378px;
   max-width: calc(100% - 40px);
 
@@ -107,91 +93,223 @@
   flex-direction: column;
   align-items: center;
 
+  padding: 28px 23px 24px;
+
   text-align: center;
+
+  background: rgba(79, 14, 3, 0.13);
+
+  box-shadow:
+    inset 0 0 0 5px rgba(255, 249, 240, 0.025),
+    0 10px 35px rgba(35, 0, 0, 0.06);
 }
 
+/* Small corner accents */
+.dress-code-inner::before,
+.dress-code-inner::after {
+  display: none;
+}
 
-/* =========================
+.dress-code-inner::before {
+  top: 7px;
+  left: 7px;
+
+  border-width: 1px 0 0 1px;
+}
+
+.dress-code-inner::after {
+  right: 7px;
+  bottom: 7px;
+
+  border-width: 0 1px 1px 0;
+}
+
+/* =========================================
    ORNAMENT
-========================= */
+========================================= */
 
 .dress-code-ornament {
-  margin-bottom: 14px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 0 18px;
+
+  color: #e6c396 !important;
 
   font-family: var(--font-heading);
-
-  font-size: 18px;
-
+  font-size: 19px;
   line-height: 1;
-
-  color: #8a5a3c !important;
 }
 
+.dress-code-ornament::before,
+.dress-code-ornament::after {
+  width: 35px;
+  height: 1px;
 
-/* =========================
-   COLOUR
-========================= */
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(230, 195, 150, 0.8)
+  );
+
+  content: "";
+}
+
+.dress-code-ornament::before {
+  margin-right: 12px;
+  transform: rotate(180deg);
+}
+
+.dress-code-ornament::after {
+  margin-left: 12px;
+}
+
+/* =========================================
+   COLOUR — if used in JSX
+========================================= */
 
 .dress-code-colour {
   margin: 0;
 
-  font-family: var(--font-script);
+  color: #fff1d9 !important;
 
+  font-family: var(--font-script);
   font-size: 43px;
   font-weight: 400;
-
-  line-height: 1;
+  line-height: 1.2;
 
   white-space: nowrap;
-
-  color: #ffffff !important;
 }
 
-
-/* =========================
+/* =========================================
    DESCRIPTION
-========================= */
+========================================= */
 
 .dress-code-description {
-  width: 297px;
+  width: 200px;
+  max-width: 100%;
 
   margin: 14px auto 0;
 
-  font-family: var(--font-body);
+  color: #fff1d9 !important;
 
+  font-family: var(--font-body);
   font-size: 13.5px;
   font-weight: 400;
-
-  line-height: 1.5;
-
+  line-height: 1.7;
   letter-spacing: 0.4px;
-
-  color: #ffffff !important;
 }
 
+/* =========================================
+   TEXT CONTENT
+========================================= */
 
-/* =========================
-   GALLERY
-========================= */
+.dress-code-copy {
+  width: 100%;
+  max-width: 340px;
+
+  color: #fff8ed;
+
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.85;
+
+  text-align: center;
+}
+
+.dress-code-copy p {
+  margin: 0;
+}
+
+/* Greeting */
+.dress-code-greeting {
+  margin-bottom: 18px !important;
+
+  color: #e9c69a;
+
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+/* Poem */
+.dress-code-poem {
+  margin: 0 0 23px !important;
+
+  color: #fff0d9;
+
+  font-family: var(--font-script);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  white-space: pre-line;
+}
+
+/* Women's and men's guidance */
+.dress-code-guidance {
+  position: relative;
+
+  margin-top: 14px !important;
+  padding-left: 16px;
+
+  color: rgba(255, 248, 237, 0.94);
+
+  text-align: left;
+  line-height: 1.85;
+}
+
+.dress-code-guidance::before {
+  position: absolute;
+  top: 10px;
+  left: 1px;
+
+  width: 5px;
+  height: 5px;
+
+  border: 1px solid #e6c396;
+
+  content: "";
+  transform: rotate(45deg);
+}
+
+/* Closing */
+.dress-code-closing {
+  margin-top: 23px !important;
+  padding-top: 17px;
+
+  border-top: 1px solid rgba(230, 195, 150, 0.25);
+
+  color: #e6c396;
+
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1.9;
+  letter-spacing: 0.3px;
+}
+
+/* =========================================
+   GALLERY — for future use
+========================================= */
 
 .dress-code-gallery {
   width: 100%;
-
   margin-top: 32px;
 
   display: flex;
-
   align-items: flex-start;
   justify-content: center;
-
   gap: 23px;
 }
 
-
-/* =========================
-   DRESS CARD
-========================= */
-
+/* Dress card */
 .dress-card {
   width: 119px;
 
@@ -200,35 +318,41 @@
   align-items: center;
 }
 
-
-/* =========================
-   IMAGE WRAPPER
-========================= */
-
+/* Image frame */
 .dress-image-wrapper {
+  position: relative;
+  box-sizing: border-box;
+
   width: 115px;
   height: 121px;
-
   padding: 5px;
-
-  
-  background: rgba(255, 250, 240, 0.65);
 
   overflow: hidden;
 
-  position: relative;
+  border: 1px solid rgba(230, 195, 150, 0.7);
+
+  background: rgba(255, 250, 240, 0.75);
+
+  box-shadow:
+    0 5px 18px rgba(35, 0, 0, 0.12);
 }
 
+/* Inner image outline */
+.dress-image-wrapper::after {
+  position: absolute;
+  inset: 8px;
 
-/* =========================
-   IMAGE
-========================= */
+  border: 1px solid rgba(79, 14, 3, 0.2);
 
+  content: "";
+  pointer-events: none;
+}
+
+/* Image */
 .dress-image {
+  display: block;
   width: 100%;
   height: 100%;
-
-  display: block;
 
   object-fit: cover;
   object-position: center;
@@ -237,65 +361,70 @@
     transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-
-/* =========================
-   LABEL
-========================= */
-
-.dress-label {
-  margin: 16px 0 0;
-  padding-top: 16px;
-  font-family: var(--font-heading);
-
-  font-size: 12px;
-  font-weight: 500;
-
-  letter-spacing: 2.3px;
-
-  line-height: 1.2;
-
-  text-transform: uppercase;
-
-  color: #f4b086 !important;
+.dress-card:hover .dress-image {
+  transform: scale(1.04);
 }
 
+/* Dress label */
+.dress-label {
+  margin: 16px 0 0;
+  padding-top: 12px;
 
-/* =========================
-   DIVIDER
-========================= */
+  color: #e6c396 !important;
+
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.6;
+
+  text-transform: uppercase;
+}
+
+/* =========================================
+   BOTTOM DIVIDER
+========================================= */
 
 .dress-code-divider {
   width: 100%;
-
-  margin-top: 29px;
+  margin-top: 30px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 }
-
 
 .dress-code-divider span {
   width: 59px;
   height: 1px;
 
-  background: #8a5a3c;
-
-  opacity: 0.6;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(230, 195, 150, 0.9)
+  );
 }
 
+.dress-code-divider span:first-child {
+  transform: rotate(180deg);
+}
 
 .dress-code-divider i {
-  margin: 0 13px;
+  margin: 0 14px;
+
+  color: #e6c396;
 
   font-family: var(--font-heading);
-
-  font-size: 14px;
-
+  font-size: 13px;
   font-style: normal;
-
   line-height: 1;
+}
 
-  color: #8a5a3c;
+/* =========================================
+   KEEP ALL CONTENT ABOVE WALLPAPER
+========================================= */
+
+.dress-code-section-title,
+.dress-code-inner {
+  isolation: isolate;
 }

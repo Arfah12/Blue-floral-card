@@ -35,13 +35,13 @@ function Wishes() {
 
     if (!guestName || !guestMessage) {
       setStatusType("error");
-      setStatus("Please enter your name and wishes.");
+      setStatus("Sila masukkan nama dan ucapan anda.");
       return;
     }
 
     if (guestName.length > 100 || guestMessage.length > 1000) {
       setStatusType("error");
-      setStatus("Name or wishes exceed the allowed length.");
+      setStatus("Nama atau ucapan melebihi had yang dibenarkan.");
       return;
     }
 
@@ -59,13 +59,13 @@ function Wishes() {
       setName("");
       setMessage("");
       setStatusType("success");
-      setStatus("Thank you! Your wishes have been sent.");
+      setStatus("Terima kasih! Ucapan anda telah dihantar.");
     } catch (error) {
       console.error("Error saving wishes:", error);
 
       setStatusType("error");
       setStatus(
-        "Unable to send your wishes. Please try again."
+        "Ucapan tidak dapat dihantar. Sila cuba lagi."
       );
     } finally {
       setLoading(false);
@@ -81,7 +81,7 @@ function Wishes() {
       />
 
       <div className="wishes-section-title">
-        Wishes
+        Ucapan
       </div>
 
       <div className="wishes-inner">
@@ -93,10 +93,10 @@ function Wishes() {
 
         <FadeIn animation="fade-up" delay={0.2}>
           <p className="wishes-subtitle">
-            Leave a little love for the happy couple
+            Berikan ucapan dan doa restu anda kepada pasangan pengantin
           </p>
         </FadeIn>
-
+<br />
         <FadeIn animation="fade-up" delay={0.4}>
           <form
             className="wishes-form"
@@ -105,7 +105,7 @@ function Wishes() {
             <div className="wishes-field">
               <input
                 type="text"
-                placeholder="Your Name"
+                placeholder="Nama Anda"
                 value={name}
                 onChange={(event) =>
                   setName(event.target.value)
@@ -119,7 +119,7 @@ function Wishes() {
             <div className="wishes-field">
               <textarea
                 rows={4}
-                placeholder="Your wishes..."
+                placeholder="Ucapan anda..."
                 value={message}
                 onChange={(event) =>
                   setMessage(event.target.value)
@@ -135,7 +135,7 @@ function Wishes() {
               className="wishes-button"
               disabled={loading}
             >
-              {loading ? "Sending..." : "Send Wishes"}
+              {loading ? "Menghantar..." : "Hantar Ucapan"}
             </button>
 
             {status && (

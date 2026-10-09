@@ -82,8 +82,8 @@ function Music({ playMusic }) {
         onClick={toggleMusic}
         aria-label={
           isPlaying
-            ? "Pause music"
-            : "Play music"
+            ? "Jeda muzik"
+            : "Mainkan muzik"
         }
       >
         <span className="music-icon">

@@ -60,7 +60,7 @@ background: #4f0e03;
 .contact-section-title {
   position: absolute;
 
-  top: 100px;
+  top: 130px;
   left: 50%;
 
   transform: translateX(-50%);
@@ -124,7 +124,7 @@ background: #4f0e03;
 
   line-height: 1;
 
-  color: #ffffff !important;
+  color: #a36a34 !important;
 }
 
 
@@ -323,5 +323,5 @@ background: #4f0e03;
 
   line-height: 1;
 
-  color: #ffffff;
+  color:  #a36a34 !important;
 }

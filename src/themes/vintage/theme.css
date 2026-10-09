@@ -89,6 +89,25 @@
 }
 
 
+/* Shared ornament and divider colour */
+.digital-card [class*="ornament"] {
+  color: #8a5a3c !important;
+}
+
+.digital-card [class*="ornament"]::before,
+.digital-card [class*="ornament"]::after {
+  background: #8a5a3c !important;
+}
+
+.digital-card [class*="divider"] i {
+  color: #8a5a3c !important;
+}
+
+.digital-card [class*="divider"] span {
+  background: #8a5a3c !important;
+}
+
+
 /* ==========================================
    FADE IN ANIMATION
 ========================================== */

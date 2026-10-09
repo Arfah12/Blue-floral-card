@@ -28,7 +28,7 @@ function TheDay() {
       ========================= */}
 
       <div className="the-day-section-title">
-        The Day
+        Hari Bahagia
       </div>
 
 
@@ -108,7 +108,7 @@ function TheDay() {
           <div className="the-day-tentative">
 
             <p className="the-day-tentative-title">
-              Tentative
+              Atur Cara Majlis
             </p>
 
             <div className="the-day-schedule">
@@ -144,7 +144,7 @@ function TheDay() {
               rel="noopener noreferrer"
               className="the-day-map-button"
             >
-              View Map
+              Lihat Lokasi
             </a>
           </FadeIn>
         )}

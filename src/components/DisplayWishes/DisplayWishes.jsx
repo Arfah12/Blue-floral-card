@@ -71,7 +71,7 @@ function DisplayWishes() {
         className="display-wishes-wallpaper"
       />
 
-      <h2 className="display-wishes-section-title">Guest Wishes</h2>
+      <h2 className="display-wishes-section-title">Ucapan Tetamu</h2>
 
       <div className="display-wishes-inner">
         <FadeIn animation="fade-scale">
@@ -80,22 +80,23 @@ function DisplayWishes() {
 
         <FadeIn animation="fade-up" delay={0.2}>
           <p className="display-wishes-subtitle">
-            With love from our family and friends
+            Terima kasih kepada semua tetamu yang telah meninggalkan ucapan dan doa restu untuk kami. 
           </p>
         </FadeIn>
 
+<br />
         <div className="display-wishes-list">
-          {loading && <p className="wish-message">Loading wishes...</p>}
+          {loading && <p className="wish-message">Sedang memuatkan ucapan...</p>}
 
           {!loading && loadError && (
             <p className="wish-message">
-              Unable to load wishes. Please try again later.
+              Ucapan tidak dapat dimuatkan. Sila cuba lagi nanti.
             </p>
           )}
 
           {!loading && !loadError && guestWishes.length === 0 && (
             <p className="wish-message">
-              Be the first to leave your wishes!
+              Jadilah insan pertama yang meninggalkan ucapan!
             </p>
           )}
 

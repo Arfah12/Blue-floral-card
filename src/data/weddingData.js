@@ -5,13 +5,13 @@ const weddingData = {
 
 
   couple: {
-    bride: "Hawa",
-    groom: "Adam",
+    bride: "Aliya",
+    groom: "Izzat",
   },
 
   couplefullname: {
-  bride: "Noradam Bin Ahmad",
-  groom: "Nur Hawa Binti Ali",
+  bride: " Nur Aliya binti Mohamad Nazir",
+  groom: " Ahmad Izzat Irfan bin Mohamad Naser",
 },
 
   // ==========================================
@@ -28,9 +28,12 @@ invitation: {
   greeting:
     "Assalamualaikum warahmatullahi wabarakatuh",
 
+  message:
+    "Dengan penuh kesyukuran, kami menjemput anda meraikan hari bahagia kami.",
+
   parents: {
-    father: "Ahmad Bin Abdullah",
-    mother: "Fatimah Binti Abu",
+    father: "Rafidah binti Zakaria ",
+    mother: "Mohamad Nazir bin Arshad",
   },
 
   invitationMessage:
@@ -50,30 +53,30 @@ invitation: {
   // ==========================================
 
   event: {
-    date: "26 December 2026",
-    day: "Saturday",
+    date: "6 Disember 2026",
+    day: "Ahad",
     time: "11:00 AM – 4:00 PM",
 
-    venue: "Dewan Seri Indah",
+    venue: "Dsayang Hall ",
 
-    address: "no. 123, Jalan Mawar, 12345 Kuala Lumpur, Malaysia",
+    address: "kampung kedah, Parit Buntar, Perak",
 
   tentative: [
     {
       time: "11:00 AM",
-      activity: "Guest Arrival",
+      activity: "Ketibaan Tetamu",
     },
     {
       time: "12:00 PM",
-      activity: "Wedding Ceremony",
+      activity: "Majlis Akad Nikah",
     },
     {
       time: "1:00 PM",
-      activity: "Lunch",
+      activity: "Jamuan Makan",
     },
     {
       time: "4:00 PM",
-      activity: "Event Ends",
+      activity: "Majlis Bersurai",
     },
 ]
   },
@@ -103,10 +106,21 @@ invitation: {
   dressCode: {
     enabled: true,
 
-    colour: "Maroon / Olive",
+    colour: "Marun / Zaitun",
 
-    description:
-      "Guests are kindly invited to dress in silver or grey tones.",
+    greeting: "Para tetamu yang dihormati ",
+
+    poem:
+      "Baju kurung anggun berseri,\nBaju Melayu segak bergaya,\nHadir memeriahkan majlis kami,\nDengan busana yang sopan dan bergaya. ",
+
+    women:
+      "Tetamu perempuan: Baju kurung, dress labuh atau pakaian Muslimah yang sopan.",
+
+    men:
+      "Tetamu lelaki: Baju Melayu, kemeja atau pakaian kasual kemas.",
+
+    closing:
+      "Terima kasih kerana sudi bersama-sama memeriahkan hari bahagia kami. Kehadiran anda amat kami hargai. ",
   },
 
   // ==========================================
@@ -116,7 +130,7 @@ invitation: {
   location: {
     enabled: true,
 
-    mapsUrl: "https://maps.google.com/",
+    mapsUrl: "https://maps.app.goo.gl/tdS8rSxZhCuGLg8n9",
   },
 
   // ==========================================

@@ -26,7 +26,7 @@ function Contact() {
       />
 
       <div className="contact-section-title">
-        Contact Us
+        Hubungi Kami
       </div>
 
       <div className="contact-inner">
@@ -39,9 +39,9 @@ function Contact() {
 
         <FadeIn animation="fade-up" delay={0.2}>
           <p className="contact-subtitle">
-            For any enquiries,
+            Sebarang pertanyaan,
             <br />
-            please contact our representatives.
+            sila hubungi wakil kami.
           </p>
         </FadeIn>
 <br />
@@ -68,7 +68,7 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="contact-button"
               >
-                WhatsApp
+                Hubungi WhatsApp
               </a>
 
             </div>
