@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import weddingData from "../../data/weddingData";
 import FadeIn from "../Animation/FadeIn";
 
@@ -7,8 +9,22 @@ import "./Gallery.css";
 
 function Gallery() {
   const gallery = weddingData.gallery;
+  const images = gallery?.images?.filter(Boolean) ?? [];
+  const [activeImage, setActiveImage] = useState(0);
 
-  if (!gallery?.enabled) {
+  useEffect(() => {
+    if (images.length < 2) {
+      return undefined;
+    }
+
+    const timer = window.setInterval(() => {
+      setActiveImage((currentImage) => (currentImage + 1) % images.length);
+    }, 4000);
+
+    return () => window.clearInterval(timer);
+  }, [images.length]);
+
+  if (!gallery?.enabled || images.length === 0) {
     return null;
   }
 
@@ -36,83 +52,36 @@ function Gallery() {
         </FadeIn>
 
 
-        <div className="gallery-layout">
-
-          {/* IMAGE 1 — LARGE */}
-
-          {gallery.images?.[0] && (
-            <FadeIn
-              animation="fade-scale"
-              delay={0.3}
-              className="gallery-photo gallery-photo-large"
-            >
-              <div className="gallery-item">
-                <img
-                  src={gallery.images[0]}
-                  alt="Wedding moment 1"
-                  className="gallery-image"
-                />
+        <FadeIn animation="fade-scale" delay={0.3} className="gallery-carousel">
+          <div
+            className="gallery-track"
+            style={{ transform: `translateX(-${activeImage * 100}%)` }}
+          >
+            {images.map((image, index) => (
+              <div className="gallery-slide" key={image}>
+                <div className="gallery-item">
+                  <img
+                    src={image}
+                    alt={`Wedding moment ${index + 1}`}
+                    className="gallery-image"
+                  />
+                </div>
               </div>
-            </FadeIn>
-          )}
+            ))}
+          </div>
+        </FadeIn>
 
-
-          {/* IMAGE 2 — SMALL */}
-
-          {gallery.images?.[1] && (
-            <FadeIn
-              animation="fade-scale"
-              delay={0.45}
-              className="gallery-photo gallery-photo-small"
-            >
-              <div className="gallery-item">
-                <img
-                  src={gallery.images[1]}
-                  alt="Wedding moment 2"
-                  className="gallery-image"
-                />
-              </div>
-            </FadeIn>
-          )}
-
-
-          {/* IMAGE 3 — SMALL */}
-
-          {gallery.images?.[2] && (
-            <FadeIn
-              animation="fade-scale"
-              delay={0.6}
-              className="gallery-photo gallery-photo-small"
-            >
-              <div className="gallery-item">
-                <img
-                  src={gallery.images[2]}
-                  alt="Wedding moment 3"
-                  className="gallery-image"
-                />
-              </div>
-            </FadeIn>
-          )}
-
-
-          {/* IMAGE 4 — LARGE */}
-
-          {gallery.images?.[3] && (
-            <FadeIn
-              animation="fade-scale"
-              delay={0.75}
-              className="gallery-photo gallery-photo-large"
-            >
-              <div className="gallery-item">
-                <img
-                  src={gallery.images[3]}
-                  alt="Wedding moment 4"
-                  className="gallery-image"
-                />
-              </div>
-            </FadeIn>
-          )}
-
+        <div className="gallery-controls" aria-label="Gallery navigation">
+          {images.map((image, index) => (
+            <button
+              type="button"
+              key={image}
+              className={`gallery-dot${activeImage === index ? " is-active" : ""}`}
+              aria-label={`Show wedding moment ${index + 1}`}
+              aria-pressed={activeImage === index}
+              onClick={() => setActiveImage(index)}
+            />
+          ))}
         </div>
 
 

@@ -1,3 +1,6 @@
+import photo1 from "../assets/images/vintage/photo1.jpg";
+import photo2 from "../assets/images/vintage/photo2.jpg";
+
 const weddingData = {
   // ==========================================
   // COUPLE
@@ -64,15 +67,15 @@ invitation: {
   tentative: [
     {
       time: "11:00 AM",
-      activity: "Ketibaan Tetamu",
+      activity: "Ketibaan Tetamu & Jamuan Makan",
     },
     {
       time: "12:00 PM",
-      activity: "Majlis Akad Nikah",
+      activity: "Ketibaan Pengantin",
     },
     {
       time: "1:00 PM",
-      activity: "Jamuan Makan",
+      activity: "Sesi Bergambar",
     },
     {
       time: "4:00 PM",
@@ -151,10 +154,9 @@ invitation: {
     enabled: true,
 
     images: [
-      "/assets/images/vintage/lace.png",
-      "/assets/images/photo2.jpg",
-      "/assets/images/photo3.jpg",
-       "/assets/images/photo4.jpg",
+      photo1,
+      photo2,
+  
     ],
   },
 
@@ -178,7 +180,7 @@ rsvp: {
   music: {
     enabled: true,
 
-    file: "/music/wedding.mp3",
+    file: "/assets/images/vintage/weddingsong.mp3",
 
     autoplay: false,
   },
@@ -189,14 +191,14 @@ rsvp: {
 
   representative1: {
     label: "Wakil 1",
-    name: "Nama Wakil 1",
-    phone: "60123456789",
+    name: "Izzati",
+    phone: "601137846513",
   },
 
   representative2: {
     label: "Wakil 2",
-    name: "Nama Wakil 2",
-    phone: "60198765432",
+    name: "Insani",
+    phone: "60174866562",
   },
 },
 

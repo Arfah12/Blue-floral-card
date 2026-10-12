@@ -23,7 +23,7 @@ function Hero() {
           </div>
         </FadeIn>
 
-        <FadeIn animation="fade" delay={0.3}>
+        <FadeIn animation="fade" delay={0.5}>
           <p className="hero-small-title">
             {weddingData.invitation.title}
           </p>

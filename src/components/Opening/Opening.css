@@ -187,7 +187,23 @@
   cursor: default;
 }
 
-
+.opening-button-text {
+  position: absolute;
+  bottom: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7d7a7a !important;
+  text-shadow:
+    0 1px 2px rgba(255, 250, 240, 0.9),
+    0 0 10px rgba(255, 255, 255, 0.35);
+  white-space: nowrap;
+  pointer-events: none;
+}
 @keyframes opening-button-pulse {
   0%,
   100% {

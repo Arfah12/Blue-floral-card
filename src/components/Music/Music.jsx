@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import weddingData from "../../data/weddingData";
-import weddingMusic from "../../assets/music/wedding.mp3";
+import weddingMusic from "../../assets/images/vintage/weddingsong.mp3";
 import "./Music.css";
 
 function Music({ playMusic }) {
@@ -72,6 +72,9 @@ function Music({ playMusic }) {
         src={weddingMusic}
         preload="auto"
         loop
+        onLoadedMetadata={(event) => {
+          event.currentTarget.currentTime = 0.25;
+        }}
       />
 
       <button

@@ -7,6 +7,7 @@ import Invitation2 from "./components/Invitation2/Invitation2";
 import TheDay from "./components/TheDay/TheDay";
 import DressCode from "./components/DressCode/DressCode";
 import Countdown from "./components/Countdown/Countdown";
+import Gallery from "./components/Gallery/Gallery";
 import Wishes from "./components/Wishes/Wishes";
 import DisplayWishes from "./components/DisplayWishes/DisplayWishes";
 import Contact from "./components/Contact/Contact";
@@ -43,7 +44,7 @@ function App() {
 
           <Countdown />
 
-          {/* <Gallery /> */}
+          <Gallery /> 
 
           <Wishes />
 

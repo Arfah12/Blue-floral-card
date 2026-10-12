@@ -100,7 +100,7 @@ background: #4f0e03;
 
   z-index: 2;
 
-  width: 240px;
+  width: min(300px, calc(100% - 20px));
 
   max-width: calc(100% - 40px);
 
@@ -149,47 +149,24 @@ background: #4f0e03;
 
 
 /* =========================
-   EDITORIAL LAYOUT
+   MOVING CAROUSEL
 ========================= */
 
-.gallery-layout {
+.gallery-carousel {
   width: 100%;
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  grid-template-rows:
-    144px
-    72px
-    144px;
-
-  gap: 7px;
+  overflow: hidden;
+  border: 1px solid rgba(138, 90, 60, 0.35);
+  box-shadow: 0 12px 30px rgba(52, 17, 10, 0.2);
 }
 
-
-/* =========================
-   PHOTO POSITIONS
-========================= */
-
-.gallery-photo-large:nth-child(1) {
-  grid-column: 1 / 3;
-  grid-row: 1;
+.gallery-track {
+  display: flex;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.gallery-photo-small:nth-child(2) {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.gallery-photo-small:nth-child(3) {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.gallery-photo-large:nth-child(4) {
-  grid-column: 1 / 3;
-  grid-row: 3;
+.gallery-slide {
+  flex: 0 0 100%;
+  height: 350px;
 }
 
 
@@ -204,9 +181,6 @@ background: #4f0e03;
   height: 100%;
 
   overflow: hidden;
-
-  border: 1px solid
-    rgba(138, 90, 60, 0.35);
 
   background: rgba(
     255,
@@ -239,9 +213,38 @@ background: #4f0e03;
     );
 }
 
-
-.gallery-item:hover .gallery-image {
+.gallery-item:hover .gallery-image,
+.gallery-slide:focus-within .gallery-image {
   transform: scale(1.04);
+}
+
+
+.gallery-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 13px;
+}
+
+.gallery-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 1px solid #8a5a3c;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.gallery-dot.is-active {
+  background: #8a5a3c;
+  transform: scale(1.25);
+}
+
+.gallery-dot:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
 }
 
 
@@ -284,4 +287,12 @@ background: #4f0e03;
   line-height: 1;
 
   color: #8a5a3c;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-track,
+  .gallery-image,
+  .gallery-dot {
+    transition: none;
+  }
 }

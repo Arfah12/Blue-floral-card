@@ -60,6 +60,9 @@ function Opening({ onOpen }) {
           </button>
         </FadeIn>
 
+        
+          <span className="opening-button-text">Buka Jemputan</span>
+
       </div>
     </section>
   );
