@@ -1,10 +1,9 @@
-/* =========================================
+/* =========================
    RSVP SECTION
-========================================= */
+========================= */
 
 .rsvp-section {
   position: relative;
-
   width: 100%;
   height: 100svh;
   min-height: 100svh;
@@ -19,48 +18,39 @@
   padding: 0 20px;
 
   background: #fff9f8;
-
   text-align: center;
 }
 
-
-/* =========================================
+/* =========================
    WALLPAPER
-========================================= */
+========================= */
 
 .rsvp-wallpaper {
   position: absolute;
-
   inset: 0;
 
   width: 100%;
   height: 100%;
 
   z-index: 0;
-
   display: block;
 
-  /* Wallpaper penuh - tidak crop */
   object-fit: contain;
   object-position: center center;
 
   max-width: 100%;
   max-height: 100%;
-
   pointer-events: none;
   user-select: none;
-background: #4f0e03;
   -webkit-user-drag: none;
 }
 
-
-/* =========================================
-   TITLE
-========================================= */
+/* =========================
+   SECTION TITLE
+========================= */
 
 .rsvp-section-title {
   position: absolute;
-
   top: 100px;
   left: 50%;
 
@@ -72,182 +62,116 @@ background: #4f0e03;
   padding: 0;
 
   font-family: var(--font-script);
-
-  font-size: 40px;
-
+  font-size: 43px;
   font-weight: 400;
-
   line-height: 1;
 
   white-space: nowrap;
-
-  color: #ffffff !important;
-
+  color: #acc4df !important;
   text-align: center;
 }
 
-
-/* =========================================
+/* =========================
    INNER
-========================================= */
+========================= */
 
 .rsvp-inner {
   position: relative;
-
   z-index: 2;
 
   width: 340px;
-
   max-width: calc(100% - 40px);
 
   margin: 0 auto;
 
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
-  justify-content: center;
-
   text-align: center;
 }
 
-
-/* =========================================
+/* =========================
    ORNAMENT
-========================================= */
+========================= */
 
 .rsvp-ornament {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 
   font-family: var(--font-heading);
-
-  font-size: 17px;
-
+  font-size: 18px;
   line-height: 1;
-
-  color: #8a5a3c !important;
+  color: #c0c0c0 !important;
 }
 
-
-/* =========================================
+/* =========================
    SUBTITLE
-========================================= */
+========================= */
 
 .rsvp-subtitle {
-  max-width: 285px;
-
-  margin: 0 0 22px;
+  max-width: 270px;
+  margin: 0 0 25px;
 
   font-family: var(--font-body);
-
-  font-size: 13px;
-
+  font-size: 13.5px;
   line-height: 1.5;
-
-  color: #ffffff !important;
-
-  text-align: center;
+  color: #acc4df !important;
 }
 
-
-/* =========================================
+/* =========================
    FORM
-========================================= */
+========================= */
 
 .rsvp-form {
   width: 100%;
-
   max-width: 310px;
 
-  margin: 0 auto;
-
   display: flex;
-
   flex-direction: column;
-
-  align-items: stretch;
-
-  justify-content: center;
-
   gap: 11px;
 }
 
-
-/* =========================================
-   INPUTS
-========================================= */
+/* =========================
+   FIELDS
+========================= */
 
 .rsvp-form input,
 .rsvp-form select {
   width: 100%;
-
+  display: block;
   box-sizing: border-box;
 
-  padding: 11px 30px;
+  padding: 12px 18px;
 
-  border: 1px solid
-    rgba(138, 90, 60, 0.4);
-
+  border: 1px solid rgba(138, 90, 60, 0.4);
   border-radius: 0;
-
   outline: none;
 
-  background: rgba(
-    255,
-    253,
-    247,
-    0.75
-  );
-
-  color: #4a1f25;
+  background: rgb(255, 255, 255);
+  color: #002744;
 
   font-family: var(--font-body);
-
-  font-size: 12.5px;
-
-  line-height: 1.3;
+  font-size: 13px;
 
   transition:
     border-color 0.3s ease,
     background 0.3s ease;
 }
 
-
 .rsvp-form select option {
-  color: #4a1f25;
-  background: #fffaf0;
+  color: #002744;
+  background: #ffffff;
 }
-
-
-/* =========================================
-   PLACEHOLDER
-========================================= */
 
 .rsvp-form input::placeholder {
-  color: #8a5a3c;
-
+  color: #4a1c00;
   opacity: 0.7;
 }
-
-
-/* =========================================
-   FOCUS
-========================================= */
 
 .rsvp-form input:focus,
 .rsvp-form select:focus {
   border-color: #8a5a3c;
-
-  background: rgba(
-    255,
-    253,
-    247,
-    0.95
-  );
+  background: rgba(255, 253, 247, 0.9);
 }
-
 
 .rsvp-form input:disabled,
 .rsvp-form select:disabled {
@@ -256,34 +180,25 @@ background: #4f0e03;
   opacity: 0.75;
 }
 
-
-/* =========================================
+/* =========================
    BUTTON
-========================================= */
+========================= */
 
 .rsvp-button {
   align-self: center;
 
-  min-width: 125px;
+  min-width: 135px;
+  margin-top: 4px;
+  padding: 10px 23px;
 
-  margin-top: 5px;
-
-  padding: 9px 21px;
-
-  border: 1px solid #641f2b;
-
-  background: #641f2b;
-
-  color: #ffffff !important;
+  border: 1px solid #80666a;
+  background: #002d61;
+  color: #fffaf0;
 
   font-family: var(--font-heading);
-
-  font-size: 10px;
-
+  font-size: 11px;
   font-weight: 600;
-
-  letter-spacing: 1.7px;
-
+  letter-spacing: 1.8px;
   text-transform: uppercase;
 
   cursor: pointer;
@@ -293,19 +208,15 @@ background: #4f0e03;
     color 0.4s ease;
 }
 
-
 .rsvp-button:hover {
   background: #4a151f;
-
-  color: #fffaf0 !important;
+  color: #fffaf0;
 }
-
 
 .rsvp-button:disabled {
   cursor: not-allowed;
   opacity: 0.65;
 }
-
 
 .rsvp-status {
   margin: 2px 0 0;
@@ -314,55 +225,39 @@ background: #4f0e03;
   overflow-wrap: anywhere;
 }
 
-
 .rsvp-status.success {
   color: #f8e8c9;
 }
-
 
 .rsvp-status.error {
   color: #ffd6d6;
 }
 
-
-/* =========================================
+/* =========================
    DIVIDER
-========================================= */
+========================= */
 
 .rsvp-divider {
   width: 100%;
-
-  margin-top: 25px;
+  margin-top: 28px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 }
 
-
 .rsvp-divider span {
-  width: 47px;
-
+  width: 50px;
   height: 1px;
-
-  background: #8a5a3c;
-
+  background: #c0c0c0;
   opacity: 0.6;
 }
 
-
 .rsvp-divider i {
-  margin: 0 11px;
+  margin: 0 12px;
 
   font-family: var(--font-heading);
-
-  font-size: 12px;
-
+  font-size: 13px;
   font-style: normal;
-
-  line-height: 1;
-
-  color: #8a5a3c;
+  color: #c0c0c0;
 }

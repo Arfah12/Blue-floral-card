@@ -8,7 +8,7 @@ import weddingData from "../../data/weddingData";
 import { db } from "../../firebase";
 import FadeIn from "../Animation/FadeIn";
 
-import displayWishesWallpaper from "../../assets/images/vintage/maroon.png";
+import displayWishesWallpaper from "../../assets/images/vintage/blue1.png";
 import openButtonImage from "../../assets/images/vintage/openbutton.png";
 
 import "./DisplayWishes.css";
@@ -78,11 +78,7 @@ function DisplayWishes() {
           <div className="display-wishes-ornament">✦</div>
         </FadeIn>
 
-        <FadeIn animation="fade-up" delay={0.2}>
-          <p className="display-wishes-subtitle">
-            Terima kasih kepada semua tetamu yang telah meninggalkan ucapan dan doa restu untuk kami. 
-          </p>
-        </FadeIn>
+        
 
 <br />
         <div className="display-wishes-list">
@@ -95,8 +91,8 @@ function DisplayWishes() {
           )}
 
           {!loading && !loadError && guestWishes.length === 0 && (
-            <p className="wish-message">
-              Jadilah insan pertama yang meninggalkan ucapan!
+            <p className="display-wishes-subtitle">
+              Jadilah orang pertama yang meninggalkan ucapan!
             </p>
           )}
 

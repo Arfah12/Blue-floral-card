@@ -10,6 +10,8 @@
 
   overflow: hidden;
 
+  background: #acc4df;
+
   background:
     linear-gradient(
       rgba(241, 231, 218, 0.92),
@@ -67,6 +69,9 @@
 
   width: 100%;
 
+  aspect-ratio: 9 / 16;
+  min-height: 0;
+
   padding: var(--section-padding);
 
   text-align: center;
@@ -74,6 +79,23 @@
   overflow: hidden;
 }
 
+.digital-card > section:not(.opening) {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 9 / 16;
+}
+
+.digital-card > .opening {
+  width: 100%;
+  max-width: var(--card-max-width);
+  height: min(100svh, calc(100vw * 16 / 9));
+  min-height: 0;
+  inset: 0;
+  left: 50%;
+  right: auto;
+  aspect-ratio: 9 / 16;
+  transform: translateX(-50%);
+}
 
 /* ==========================================
    DECORATIVE LINE
@@ -91,20 +113,20 @@
 
 /* Shared ornament and divider colour */
 .digital-card [class*="ornament"] {
-  color: #8a5a3c !important;
+  color: #c0c0c0 !important;
 }
 
 .digital-card [class*="ornament"]::before,
 .digital-card [class*="ornament"]::after {
-  background: #8a5a3c !important;
+  background: #c0c0c0 !important;
 }
 
 .digital-card [class*="divider"] i {
-  color: #8a5a3c !important;
+  color: #c0c0c0 !important;
 }
 
 .digital-card [class*="divider"] span {
-  background: #8a5a3c !important;
+  background: #c0c0c0 !important;
 }
 
 
@@ -222,4 +244,47 @@
       80px 20px;
   }
 
+}
+
+/* Keep section copy consistent across component-specific styles. */
+.digital-card section,
+.opening {
+  color: #acc4df !important;
+}
+
+.digital-card section :where(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  small,
+  strong,
+  em,
+  label,
+  a,
+  button,
+  i
+),
+.opening :where(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  small,
+  strong,
+  em,
+  label,
+  a,
+  button,
+  i
+) {
+  color: #acc4df !important;
 }

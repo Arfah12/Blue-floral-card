@@ -17,7 +17,6 @@
   margin: 0;
   padding: 150px 20px 60px;
 
-  background: #fff9f8;
 
   text-align: center;
 }
@@ -29,7 +28,6 @@
 
   z-index: 1;
 
-  border: 1px solid rgba(219, 179, 126, 0.5);
 
   content: "";
   pointer-events: none;
@@ -93,7 +91,7 @@ background: #4f0e03;
 
   white-space: nowrap;
 
-  color: #ffffff !important;
+  color: #8a5a3c !important;
 
   text-align: center;
 }
@@ -145,7 +143,7 @@ background: #4f0e03;
 ========================================= */
 
 .display-wishes-subtitle {
-  max-width: 275px;
+  max-width: 500px;
 
   margin: 0 0 2px;
 
@@ -155,7 +153,7 @@ background: #4f0e03;
 
   line-height: 2;
 
-  color: #ffffff !important;
+  color: #8a5a3c !important;
 
   text-align: center;
 }
@@ -342,7 +340,7 @@ background: #4f0e03;
 
   line-height: 1.6;
 
-  color: #4a1f25 !important;
+  color: #9bbcd4 !important;
 
   overflow-wrap: anywhere;
 }
@@ -408,6 +406,27 @@ background: #4f0e03;
   line-height: 1;
 
   color: #8a5a3c;
+}
+
+/* Override the shared section text colour for the wishes card. */
+.digital-card .display-wishes-section .wish-mark,
+.digital-card .display-wishes-section .wish-message,
+.digital-card .display-wishes-section .wish-name {
+  color: #8a5a3c !important;
+}
+
+.digital-card .display-wishes-section .display-wishes-section-title,
+.digital-card .display-wishes-section .display-wishes-subtitle {
+  color: #acc4df !important;
+}
+
+.digital-card .display-wishes-section .display-wishes-ornament,
+.digital-card .display-wishes-section .display-wishes-divider i {
+  color: #c0c0c0 !important;
+}
+
+.digital-card .display-wishes-section .display-wishes-divider span {
+  background: #c0c0c0 !important;
 }
 
 

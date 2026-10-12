@@ -22,7 +22,7 @@ function Footer() {
         <div className="site-footer-divider"></div>
 
         <p className="site-footer-couple">
-          Dengan penuh kasih, Aliya &amp; Izzat
+          Dengan penuh kasih, Hawani &amp; Alif
         </p>
 
         <BrideView />

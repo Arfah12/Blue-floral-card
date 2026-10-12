@@ -11,7 +11,7 @@
   width: 100%;
   padding: 76px 20px 24px;
 
-  background: #4f0e03;
+  background: #acc4df;;
   color: #f6e4c4;
   text-align: center;
 }
@@ -48,7 +48,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(219, 179, 126, 0.85),
+    rgba(233, 228, 220, 0.85),
     transparent
   );
   content: "";
@@ -66,7 +66,7 @@
 /* Arabic Quranic verse */
 .site-footer-quote {
   margin: 0 auto 18px;
-  color: #f4dfb9;
+  color: #ffffff;
 
   font-family: "Amiri", "Noto Naskh Arabic", serif;
   font-size: 32px;
@@ -100,10 +100,10 @@
   margin: 0;
   padding: 7px 14px;
 
-  border: 1px solid rgba(219, 179, 126, 0.35);
+  border: 1px solid rgba(247, 244, 241, 0.35);
   border-radius: 2px;
 
-  color: #dbb37e;
+  color: #f9f5f1;
   font-family: var(--font-heading, serif);
   font-size: 9px;
   font-weight: 400;
@@ -121,7 +121,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(219, 179, 126, 0.8),
+    rgba(255, 255, 255, 0.8),
     transparent
   );
 }
@@ -133,8 +133,8 @@
   width: 6px;
   height: 6px;
 
-  border: 1px solid #dbb37e;
-  background: #4f0e03;
+  border: 1px solid #fbfbfb;
+  background: #acc4df;;
   content: "";
 
   transform: translate(-50%, -50%) rotate(45deg);
@@ -161,7 +161,7 @@
 /* Thank-you note */
 .site-footer-note {
   margin: 16px 0 0;
-  color: rgba(246, 228, 196, 0.65);
+  color: rgba(247, 243, 237, 0.65);
 
   font-family: var(--font-body, serif);
   font-size: 11px;
@@ -178,6 +178,6 @@
   height: 1px;
   margin: 18px auto 0;
 
-  background: rgba(219, 179, 126, 0.45);
+  background: rgba(246, 241, 235, 0.45);
   content: "";
 }

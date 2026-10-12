@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import weddingData from "../../data/weddingData";
 import FadeIn from "../Animation/FadeIn";
 
-import countdownWallpaper from "../../assets/images/vintage/maroon.png";
+import countdownWallpaper from "../../assets/images/vintage/blue1.png";
 
 import "./Countdown.css";
 

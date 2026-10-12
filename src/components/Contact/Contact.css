@@ -37,7 +37,6 @@
   height: 100%;
 
   z-index: 0;
-background: #4f0e03;
   display: block;
 
   object-fit: contain;
@@ -80,7 +79,7 @@ background: #4f0e03;
 
   white-space: nowrap;
 
-  color: #ffffff !important;
+  color: #acc4df !important;
 
   text-align: center;
 }
@@ -176,17 +175,12 @@ background: #4f0e03;
   padding: 16px 20px 18px;
 
   border-top: 1px solid
-    rgba(255, 255, 255, 0.65);
+    rgb(99, 161, 197);
 
   border-bottom: 1px solid
-    rgba(255, 255, 255, 0.65);
+    rgb(186, 232, 244);
 
-  background: rgba(
-    74,
-    31,
-    37,
-    0.18
-  );
+  background: rgba(230, 236, 244, 0.048);
 
   box-sizing: border-box;
 

@@ -10,7 +10,7 @@ import { db } from "../../firebase";
 import weddingData from "../../data/weddingData";
 import FadeIn from "../Animation/FadeIn";
 
-import rsvpWallpaper from "../../assets/images/vintage/maroon.png";
+import rsvpWallpaper from "../../assets/images/vintage/blue1.png";
 
 import "./RSVP.css";
 

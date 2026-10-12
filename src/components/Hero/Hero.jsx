@@ -1,7 +1,7 @@
 import weddingData from "../../data/weddingData";
 import FadeIn from "../Animation/FadeIn";
 
-import heroWallpaper from "../../assets/images/vintage/maroon.png";
+import heroWallpaper from "../../assets/images/vintage/blue2.png";
 
 import "./Hero.css";
 

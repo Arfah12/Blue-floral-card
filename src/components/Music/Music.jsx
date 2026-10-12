@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import weddingData from "../../data/weddingData";
-import weddingMusic from "../../assets/images/vintage/weddingsong.mp3";
+import weddingMusic from "../../assets/images/vintage/dl.mp3";
 import "./Music.css";
 
 function Music({ playMusic }) {

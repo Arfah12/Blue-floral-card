@@ -43,7 +43,6 @@
 
   max-width: 100%;
   max-height: 100%;
-background: #4f0e03;
   pointer-events: none;
   user-select: none;
   -webkit-user-drag: none;
@@ -75,7 +74,7 @@ background: #4f0e03;
 
   white-space: nowrap;
 
-  color: #ffffff !important;
+  color:  #acc4df !important;
 
   text-align: center;
 }
@@ -133,7 +132,7 @@ background: #4f0e03;
   font-size: 13.5px;
   line-height: 1.5;
 
-  color: #ffffff !important;
+  color:  #ffffff !important;
 }
 
 
@@ -177,9 +176,9 @@ background: #4f0e03;
 
   outline: none;
 
-  background: rgba(255, 253, 247, 0.88);
+  background: rgb(255, 255, 255);
 
-  color: #4a1f25;
+  color: #002744;
 
   font-family: var(--font-body);
 
@@ -239,9 +238,9 @@ background: #4f0e03;
 
   padding: 10px 23px;
 
-  border: 1px solid #641f2b;
+  border: 1px solid #80666a;
 
-  background: #641f2b;
+  background:  #002d61;
 
   color: #fffaf0;
 

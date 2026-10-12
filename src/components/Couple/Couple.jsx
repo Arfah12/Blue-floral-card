@@ -1,7 +1,7 @@
 import weddingData from "../../data/weddingData";
 import FadeIn from "../Animation/FadeIn";
 
-import coupleWallpaper from "../../assets/images/vintage/lace.png";
+import coupleWallpaper from "../../assets/images/vintage/blue1.png";
 import brideImage from "../../assets/images/vintage/bride.jpg";
 import groomImage from "../../assets/images/vintage/groom.jpg";
 

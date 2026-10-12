@@ -1,7 +1,7 @@
 import weddingData from "../../data/weddingData";
 import FadeIn from "../Animation/FadeIn";
 
-import theDayWallpaper from "../../assets/images/vintage/maroon.png";
+import theDayWallpaper from "../../assets/images/vintage/blue1.png";
 
 import "./TheDay.css";
 
@@ -10,7 +10,7 @@ function TheDay() {
   const location = weddingData.location;
 
   return (
-    <section className="the-day-section">
+    <section className="the-day-section">zz
 
       {/* =========================
           WALLPAPER

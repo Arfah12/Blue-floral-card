@@ -61,7 +61,7 @@
      CARD
   ========================================= */
 
-  --card-max-width: 470px;
+  --card-max-width: min(470px, calc(100svh * 9 / 16));
 
   --section-padding: 100px 24px;
 

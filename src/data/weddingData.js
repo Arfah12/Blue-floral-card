@@ -1,5 +1,7 @@
-import photo1 from "../assets/images/vintage/photo1.jpg";
-import photo2 from "../assets/images/vintage/photo2.jpg";
+import photo1 from "../assets/images/vintage/bride1.jpg";
+import photo2 from "../assets/images/vintage/bride2.jpg";
+import photo3 from "../assets/images/vintage/bride3.jpg";
+import photo4 from "../assets/images/vintage/bride4.jpg";
 
 const weddingData = {
   // ==========================================
@@ -8,13 +10,13 @@ const weddingData = {
 
 
   couple: {
-    bride: "Aliya",
-    groom: "Izzat",
+    bride: "Hawani",
+    groom: "Alif",
   },
 
   couplefullname: {
-  bride: " Nur Aliya binti Mohamad Nazir",
-  groom: " Ahmad Izzat Irfan bin Mohamad Naser",
+  bride: " Nama Penuh Pengantin Perempuan",
+  groom: " Nama Penuh Pengantin Lelaki",
 },
 
   // ==========================================
@@ -35,8 +37,8 @@ invitation: {
     "Dengan penuh kesyukuran, kami menjemput anda meraikan hari bahagia kami.",
 
   parents: {
-    father: "Rafidah binti Zakaria ",
-    mother: "Mohamad Nazir bin Arshad",
+    father: "Nama bapa pengantin perempuan",
+    mother: "Nama ibu pengantin perempuan",
   },
 
   invitationMessage:
@@ -60,9 +62,9 @@ invitation: {
     day: "Ahad",
     time: "11:00 AM – 4:00 PM",
 
-    venue: "Dsayang Hall ",
+    venue: "Bintang Banquet Hall",
 
-    address: "kampung kedah, Parit Buntar, Perak",
+    address: "Venue Address, City, State, Country",
 
   tentative: [
     {
@@ -156,7 +158,8 @@ invitation: {
     images: [
       photo1,
       photo2,
-  
+      photo3,
+      photo4,
     ],
   },
 
@@ -191,14 +194,14 @@ rsvp: {
 
   representative1: {
     label: "Wakil 1",
-    name: "Izzati",
-    phone: "601137846513",
+    name: "Wakil 1",
+    phone: "60123456789",
   },
 
   representative2: {
     label: "Wakil 2",
-    name: "Insani",
-    phone: "60174866562",
+    name: "Wakil 2",
+    phone: "0123456789",
   },
 },
 

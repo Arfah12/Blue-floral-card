@@ -23,7 +23,7 @@
 
   border-radius: 50%;
 
-  background: #4a1f25;
+  background: #acc4df;
 
   color: #f1dfbd;
 
@@ -46,7 +46,7 @@
 .music-button:hover {
   transform: scale(1.08);
 
-  background: #5a252c;
+  background: #09468c;
 
   box-shadow:
     0 10px 28px rgba(0, 0, 0, 0.24);

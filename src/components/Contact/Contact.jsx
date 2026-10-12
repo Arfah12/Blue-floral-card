@@ -1,7 +1,7 @@
 import weddingData from "../../data/weddingData";
 import FadeIn from "../Animation/FadeIn";
 
-import contactWallpaper from "../../assets/images/vintage/maroon.png";
+import contactWallpaper from "../../assets/images/vintage/blue1.png";
 
 import "./Contact.css";
 
@@ -68,7 +68,7 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="contact-button"
               >
-                Hubungi WhatsApp
+                 WhatsApp
               </a>
 
             </div>

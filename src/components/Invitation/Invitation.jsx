@@ -1,7 +1,7 @@
 import weddingData from "../../data/weddingData";
 import FadeIn from "../Animation/FadeIn";
 
-import heroWallpaper from "../../assets/images/vintage/hero-mobile.png";
+import heroWallpaper from "../../assets/images/vintage/blue1.png";
 
 import "./Invitation.css";
 

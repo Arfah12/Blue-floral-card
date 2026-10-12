@@ -2,7 +2,7 @@
 import { useState } from "react";
 import FadeIn from "../Animation/FadeIn";
 
-import openingWallpaper from "../../assets/images/vintage/hero4.png";
+import openingWallpaper from "../../assets/images/vintage/heroblue.jpg";
 import openButtonImage from "../../assets/images/vintage/openbutton.png";
 
 import "./Opening.css";
@@ -57,11 +57,11 @@ function Opening({ onOpen }) {
               alt=""
               className="opening-button-image"
             />
+            <span className="opening-button-text">Buka Jemputan</span>
           </button>
         </FadeIn>
 
         
-          <span className="opening-button-text">Buka Jemputan</span>
 
       </div>
     </section>
